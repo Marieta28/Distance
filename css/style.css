@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif;
   background: #f5f5f5;
@@ -9,6 +10,9 @@ body {
   background-color: #0050b3;
   padding-top: 6px;
   padding-bottom: 6px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .header-block {
   max-width: 1200px;
@@ -102,10 +106,11 @@ body {
   display: flex;
   max-width: 1200px;
   margin: auto;
+  justify-content: space-between;
 }
 .menu-sidebar {
-  margin-top: 18px;
-  max-width: 192px;
+  margin-top: 66px;
+  width: 192px;
   margin-right: 12px;
 }
 .menu-sidebar .user {
@@ -169,7 +174,7 @@ body {
 }
 .main-feed {
   max-width: 588px;
-  margin-top: 18px;
+  margin-top: 66px;
   flex-grow: 1;
 }
 .create-post {
@@ -345,4 +350,215 @@ body {
 }
 .post-button-text.active {
   color: #1890ff;
+}
+.right-sidebar {
+  width: 384px;
+  margin-left: 24px;
+}
+.stories {
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 66px;
+  margin-bottom: 16px;
+  padding: 16px;
+  padding-left: 24px;
+}
+.stories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.stories-title {
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+  margin: 0;
+}
+.stories-buttons {
+  display: flex;
+  align-items: center;
+}
+.story-button-link {
+  display: inline-flex;
+  font-weight: normal;
+  color: #0050b3;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+}
+.story-button-link:first-child:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #bfbfbf;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 8px;
+  margin-top: 8px;
+  display: inline-block;
+}
+.stories-icon {
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-top: 3px;
+}
+.story-item-add,
+.story-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.story-image {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #1890ff;
+  margin-right: 12px;
+}
+.story-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050b3;
+  width: 100%;
+  display: block;
+}
+.story-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
+  width: 100%;
+  word-wrap: break-word;
+}
+.story-link.more {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.story-text.more {
+  color: #0050b3;
+  margin-left: 12px;
+}
+.birthday {
+  width: 384px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 17px 16px;
+}
+.birthday-body {
+  display: flex;
+  align-items: center;
+}
+.birthday-text {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.name {
+  color: #0050b3;
+  font-size: 14px;
+  text-decoration: none;
+}
+.your-page {
+  margin-top: 16px;
+  width: 384px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.header-text {
+  color: #595959;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.page-body {
+  margin-top: 16px;
+  display: flex;
+  align-items: top;
+  padding-bottom: 23px;
+}
+.page-body-secondary {
+  margin-left: 12px;
+}
+.secondary-title {
+  font-weight: 600;
+  color: #0050b3;
+  font-size: 14px;
+  line-height: 22px;
+}
+.secondary-text {
+  margin-top: 4px;
+}
+.messinges,
+.notification {
+  display: flex;
+  align-items: center;
+}
+.text-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin-left: 4px;
+}
+.page-footer {
+  padding-top: 16px;
+  border-top: 1px solid #d9d9d9;
+}
+.your-page-buttons {
+  align-items: center;
+}
+.your-page-button {
+  width: 114px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+.a-button {
+  color: #595959;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.weekes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+}
+.week-title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #262626;
+  margin-bottom: 0;
+}
+.week-text {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
 }
