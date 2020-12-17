@@ -91,8 +91,13 @@ body {
   background: #003a8c;
   margin-left: 12px;
 }
-.user-avatar {
+.user-avatar,
+.avatar {
   margin-right: 8px;
+}
+.user-avatar {
+  width: 24px;
+  height: 24px;
 }
 .user-name {
   color: #fff;
